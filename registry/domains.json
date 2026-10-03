@@ -1,0 +1,308 @@
+{
+  "format": "taowind.protocol-hub.catalog.v0.1",
+  "catalogVersion": "0.1.0-review",
+  "classification": "informative-catalog",
+  "observedOn": "2026-10-03",
+  "normativePromotion": false,
+  "sourceRegistryVersion": "0.1.0-alpha.20",
+  "domainStatusCounts": {
+    "partial": 14,
+    "not_implemented": 2,
+    "implemented": 0
+  },
+  "domains": [
+    {
+      "id": "P00",
+      "name": "Shared Semantic Core",
+      "nameZh": "共享语义核心",
+      "classification": "roadmap-domain",
+      "purpose": "让不同协议对主体、请求、会话、权限和证据使用可对应的语义结构",
+      "roadmapStatus": "partial",
+      "implementationSummary": "已有十类运行时对象投影和RCL事务、迁移、路由、恢复判据",
+      "remainingGaps": "跨协议通用ABI、版本治理与演化尚缺",
+      "ownerBoundary": [
+        "TWNI profile composition",
+        "RCL semantic execution"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P01",
+      "name": "Subject and Identity",
+      "nameZh": "主体与身份",
+      "classification": "roadmap-domain",
+      "purpose": "回答是谁，以及换节点后是否仍是同一主体",
+      "roadmapStatus": "partial",
+      "implementationSummary": "本地迁移保持subjectId与continuityRoot；固定Ed25519身份，Windows可选DPAPI恢复",
+      "remainingGaps": "公网注册、跨设备恢复、完整凭证轮换和委托表示尚缺",
+      "ownerBoundary": [
+        "TWNI local identity profile"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P02",
+      "name": "Naming and Addressing",
+      "nameZh": "命名与寻址",
+      "classification": "roadmap-domain",
+      "purpose": "将稳定主体引用与当次访问节点的地址分开",
+      "roadmapStatus": "partial",
+      "implementationSummary": "已有TINP能力地址；主体引用不再等同含节点的旧URI",
+      "remainingGaps": "全局命名、权威解析与脱离节点的公网发现尚缺",
+      "ownerBoundary": [
+        "TINP address syntax",
+        "TWNI subject-reference projection"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P03",
+      "name": "Discovery and Presence",
+      "nameZh": "发现与在线状态",
+      "classification": "roadmap-domain",
+      "purpose": "查找有哪些可调用服务，并判断其声明是否仍有效",
+      "roadmapStatus": "partial",
+      "implementationSummary": "签名发现响应、目录TTL与可调用Provider检查",
+      "remainingGaps": "动态注册、公网presence分发与对抗规模验证尚缺",
+      "ownerBoundary": [
+        "TINP directory",
+        "TWNI signed local discovery"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P04",
+      "name": "Intent and Capability Negotiation",
+      "nameZh": "意图与能力协商",
+      "classification": "roadmap-domain",
+      "purpose": "把请求意图落到明确能力契约，判断双方能否协作",
+      "roadmapStatus": "partial",
+      "implementationSummary": "调用OPP原有CHP/RCP；精确版本与契约匹配；一类中文意图语法",
+      "remainingGaps": "通用意图理解和生态级能力组合尚缺；不重定义OPP协商所有权",
+      "ownerBoundary": [
+        "OPP agreement protocols",
+        "TWNI bounded intent parser"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P05",
+      "name": "Authority and Sovereignty",
+      "nameZh": "权限与主权",
+      "classification": "roadmap-domain",
+      "purpose": "界定谁能做什么、有效多久，以及撤销后如何拒绝执行",
+      "roadmapStatus": "partial",
+      "implementationSummary": "只读签名租约、RCL准入、单机撤销与恢复；可选外部签署、离线注册表与镜像/见证；本地进程之间的TLS状态传输和断点续传",
+      "remainingGaps": "生产密钥托管、全局撤销、RNCS租约导入、通用委托、高影响动作、在线透明分发、可信时间和跨设备持久收敛尚缺",
+      "ownerBoundary": [
+        "RCL admission",
+        "TWNI local lease profile",
+        "RNCS world authority retained",
+        "AAF approval format/signature retained; TINP narrow adapter only"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P06",
+      "name": "Trust Evidence and Provenance",
+      "nameZh": "信任证据与溯源",
+      "classification": "roadmap-domain",
+      "purpose": "把执行结果与请求、权限和路径绑定，并保留可复核来源",
+      "roadmapStatus": "partial",
+      "implementationSummary": "签名回执、事件链、根绑定；本地注册表历史、镜像、见证、回放及传输日志",
+      "remainingGaps": "分布式持久一致、可信时间戳与生产留存控制尚缺；签名不证明任意业务正确",
+      "ownerBoundary": [
+        "TWNI network evidence ordering",
+        "OPP exchange evidence retained",
+        "RCL witnesses",
+        "RFE world facts retained"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P07",
+      "name": "Routing and Path Selection",
+      "nameZh": "路由与路径选择",
+      "classification": "roadmap-domain",
+      "purpose": "在成本、时延、能耗、地区与带宽约束下选择合法路径",
+      "roadmapStatus": "partial",
+      "implementationSummary": "多跳和备用路径；组合约束搜索；RCL最终路由准入",
+      "remainingGaps": "分布式路由收敛、生产指标和全局路由治理尚缺",
+      "ownerBoundary": [
+        "TINP topology",
+        "RCL route admission",
+        "JS route search provider"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P08",
+      "name": "Session and Continuity",
+      "nameZh": "会话与连续性",
+      "classification": "roadmap-domain",
+      "purpose": "故障、迁移或重启后保持主体、权限、证据的关联",
+      "roadmapStatus": "partial",
+      "implementationSummary": "签名本地会话；Provider/来源迁移；Windows冷恢复；未决请求失败闭合，维护模式核对与整租约退役",
+      "remainingGaps": "跨设备重注册/转移、无外锚的整目录防回滚和副作用事务尚缺",
+      "ownerBoundary": [
+        "TWNI network session profile",
+        "RCL invariants",
+        "RNCS domain session retained"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P09",
+      "name": "Transport Adaptation",
+      "nameZh": "传输适配",
+      "classification": "roadmap-domain",
+      "purpose": "把有边界的协议消息交给实际传输实现",
+      "roadmapStatus": "partial",
+      "implementationSummary": "UDP/TCP回环、帧界限、限速；固定证书TLS 1.3状态传输、恢复日志；策略约束的只读HTTPS观察",
+      "remainingGaps": "QUIC、WebSocket、NAT穿透、生产证书托管和公网传输注册尚缺",
+      "ownerBoundary": [
+        "TINP framing/UDP",
+        "Node TCP/crypto providers",
+        "TWNI local transport adapter"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P10",
+      "name": "Resource SLA and Value",
+      "nameZh": "资源、SLA与价值",
+      "classification": "roadmap-domain",
+      "purpose": "表达调用预算和资源限制，并区分声明与实际保障",
+      "roadmapStatus": "partial",
+      "implementationSummary": "签名预算字段、RCL路线约束和明确非保证的Provider SLA声明",
+      "remainingGaps": "计量计费、跨域配额、保证型SLA和结算尚缺",
+      "ownerBoundary": [
+        "TWNI budget profile",
+        "RCL constraints"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P11",
+      "name": "World and Data Context",
+      "nameZh": "世界与数据上下文",
+      "classification": "roadmap-domain",
+      "purpose": "指明请求属于哪个世界/数据上下文，保持既有权威归属",
+      "roadmapStatus": "partial",
+      "implementationSummary": "绑定worldId并禁止权威世界动作；当前只持世界引用",
+      "remainingGaps": "RNCS/RFE运行时适配、世界同步、数据生命周期和隐私执行尚缺",
+      "ownerBoundary": [
+        "RNCS/RFE canonical world state",
+        "TWNI world reference only"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P12",
+      "name": "Application Seed",
+      "nameZh": "应用种子",
+      "classification": "roadmap-domain",
+      "purpose": "描述可分发、可验证并能安装的应用初始工件",
+      "roadmapStatus": "not_implemented",
+      "implementationSummary": "尚无该域实现",
+      "remainingGaps": "种子格式、跨平台安装分发和种子验证尚缺；Owner待审计裁定",
+      "ownerBoundary": [
+        "UNDECIDED: reuse existing seed owner after audit"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P13",
+      "name": "Runtime Capability and Lowering",
+      "nameZh": "运行时能力与Lowering",
+      "classification": "roadmap-domain",
+      "purpose": "把抽象约束落到具体编译器、运行时和设备能力",
+      "roadmapStatus": "partial",
+      "implementationSummary": "固定RCL程序经过原编译器和JS运行时执行；节点进程运行一个纯Provider",
+      "remainingGaps": "设备运行时协商、应用Lowering和通用硬件适配尚缺",
+      "ownerBoundary": [
+        "RCL language",
+        "Specialized Node/Python providers"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P14",
+      "name": "Private Network and Isolation",
+      "nameZh": "私网与隔离",
+      "classification": "roadmap-domain",
+      "purpose": "按主体或世界建立实际的网络隔离边界",
+      "roadmapStatus": "not_implemented",
+      "implementationSummary": "尚无该域实现；测试断链不能算隔离协议",
+      "remainingGaps": "VPN/隧道与主体/世界级私网执行尚缺；Owner待裁定",
+      "ownerBoundary": [
+        "UNDECIDED: future explicit isolation/security provider"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    },
+    {
+      "id": "P15",
+      "name": "Legacy Interoperability",
+      "nameZh": "旧网互操作",
+      "classification": "roadmap-domain",
+      "purpose": "在保留现有互联网协议职责的前提下形成受控兼容路径",
+      "roadmapStatus": "partial",
+      "implementationSummary": "注册表记录固定OPP源的只读HTTP观察、JSON投影、根化回执和本地consumer验收绑定",
+      "remainingGaps": "DNS/TLS/浏览器/应用的一般兼容、通用HTTP迁移与独立第三方consumer尚缺；使用TCP不等于实现迁移协议",
+      "ownerBoundary": [
+        "Existing Internet protocols retained",
+        "TINP read-only HTTP transport adapter",
+        "OPP CHP/RCP semantics retained by OPP"
+      ],
+      "statusSource": "TINP/registry/protocols.json",
+      "statusSourceVersion": "0.1.0-alpha.20",
+      "evidenceLevel": "upstream-reported; not independently rerun in this catalog",
+      "normativeSpecification": "not-reproduced; original documents require owner publication decision"
+    }
+  ]
+}

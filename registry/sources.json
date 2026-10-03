@@ -1,0 +1,116 @@
+{
+  "format": "taowind.protocol-hub.sources.v0.1",
+  "observedOn": "2026-10-03",
+  "sources": [
+    {
+      "id": "TINP/registry/protocols.json",
+      "repository": "xingxuling/TINP",
+      "commit": "729113b89e6dea59033b64c2aab3dca0c28f5fc3",
+      "path": "registry/protocols.json",
+      "url": "https://github.com/xingxuling/TINP/blob/729113b89e6dea59033b64c2aab3dca0c28f5fc3/registry/protocols.json",
+      "gitBlobSha": "3d36b856f13601c4589fd9b5c69d31637793c36c",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "TINP/docs/SPEC_DEVIATIONS.md",
+      "repository": "xingxuling/TINP",
+      "commit": "729113b89e6dea59033b64c2aab3dca0c28f5fc3",
+      "path": "docs/SPEC_DEVIATIONS.md",
+      "url": "https://github.com/xingxuling/TINP/blob/729113b89e6dea59033b64c2aab3dca0c28f5fc3/docs/SPEC_DEVIATIONS.md",
+      "gitBlobSha": "5dc95ed4d0c399f3aefcd6e021bcfcb1c006a8aa",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "TINP/audit/upstream/input-provenance.json",
+      "repository": "xingxuling/TINP",
+      "commit": "729113b89e6dea59033b64c2aab3dca0c28f5fc3",
+      "path": "audit/upstream/input-provenance.json",
+      "url": "https://github.com/xingxuling/TINP/blob/729113b89e6dea59033b64c2aab3dca0c28f5fc3/audit/upstream/input-provenance.json",
+      "gitBlobSha": "18a88ac140bfc61e486828c5676759b27f38a46e",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "TINP/README.md",
+      "repository": "xingxuling/TINP",
+      "commit": "729113b89e6dea59033b64c2aab3dca0c28f5fc3",
+      "path": "README.md",
+      "url": "https://github.com/xingxuling/TINP/blob/729113b89e6dea59033b64c2aab3dca0c28f5fc3/README.md",
+      "gitBlobSha": "da6725b3a99bc68bd58e6457bf4ed7521fcfe164",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "TINP/docs/LICENSE_AUDIT.md",
+      "repository": "xingxuling/TINP",
+      "commit": "729113b89e6dea59033b64c2aab3dca0c28f5fc3",
+      "path": "docs/LICENSE_AUDIT.md",
+      "url": "https://github.com/xingxuling/TINP/blob/729113b89e6dea59033b64c2aab3dca0c28f5fc3/docs/LICENSE_AUDIT.md",
+      "gitBlobSha": "d909b7aacb955a6b8ba4f7fdca36926ad50961ba",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "OPP/README.md",
+      "repository": "xingxuling/OPP",
+      "commit": "da65ab1d26c01c5e2939294e415b9fd07b7dbe5a",
+      "path": "README.md",
+      "url": "https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/README.md",
+      "gitBlobSha": "54f68792152988590f1a28dad09f1a0adab8f550",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "OPP/docs/SPECIFICATION.md",
+      "repository": "xingxuling/OPP",
+      "commit": "da65ab1d26c01c5e2939294e415b9fd07b7dbe5a",
+      "path": "docs/SPECIFICATION.md",
+      "url": "https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/docs/SPECIFICATION.md",
+      "gitBlobSha": "012d3581c6c4fa3aff73397ed214d304f0851a3c",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "OPP/STATUS.md",
+      "repository": "xingxuling/OPP",
+      "commit": "da65ab1d26c01c5e2939294e415b9fd07b7dbe5a",
+      "path": "STATUS.md",
+      "url": "https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/STATUS.md",
+      "gitBlobSha": "74d98954126c06989c6efd0972c3fb7e1937dcf5",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "OPP/LICENSE",
+      "repository": "xingxuling/OPP",
+      "commit": "da65ab1d26c01c5e2939294e415b9fd07b7dbe5a",
+      "path": "LICENSE",
+      "url": "https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/LICENSE",
+      "gitBlobSha": "7e1cc9062fea26bf2633a0eb73c98eeb25be309a",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "OPP/registry/protocols.json",
+      "repository": "xingxuling/OPP",
+      "commit": "da65ab1d26c01c5e2939294e415b9fd07b7dbe5a",
+      "path": "registry/protocols.json",
+      "url": "https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/registry/protocols.json",
+      "gitBlobSha": "d35515047302b96e320a7f9b1081d44d4a813958",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "linked and summarized; not vendored"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "format": "taowind.protocol-hub.implementations.v0.1",
+  "entries": [
+    {
+      "id": "OPP",
+      "url": "https://github.com/xingxuling/OPP",
+      "commit": "da65ab1d26c01c5e2939294e415b9fd07b7dbe5a",
+      "role": "语义协议族、协商、受限桥接与运行工具链",
+      "maturity": "candidate",
+      "independentVerification": "unverified",
+      "license": "MIT at pinned current source; historical snapshots require separate review"
+    },
+    {
+      "id": "TINP",
+      "url": "https://github.com/xingxuling/TINP",
+      "commit": "729113b89e6dea59033b64c2aab3dca0c28f5fc3",
+      "role": "网络执行治理套件与有限运行时实现",
+      "maturity": "VERIFIED_LOCAL_CANDIDATE / NOT_DEPLOYED, upstream reported",
+      "independentVerification": "not established by hosted same-operator evidence",
+      "license": "NOT_ADJUDICATED"
+    }
+  ]
+}
