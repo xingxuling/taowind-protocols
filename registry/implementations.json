@@ -7,8 +7,17 @@
       "commit": "da65ab1d26c01c5e2939294e415b9fd07b7dbe5a",
       "role": "语义协议族、协商、受限桥接与运行工具链",
       "maturity": "candidate",
-      "independentVerification": "unverified",
-      "license": "MIT at pinned current source; historical snapshots require separate review"
+      "independentVerification": "third-party rerun reported; raw artifacts not independently recalculated; independent protocol implementation/certification not established",
+      "license": "MIT at pinned current source; historical snapshots require separate review",
+      "commitMeaning": "original catalog code snapshot, not the second-round tested commit",
+      "reportedVerification": {
+        "status": "second-round rerun reported",
+        "testedCommit": "e3dec213e5d38f64eb3cfb6066fad87fdc61a348",
+        "source": "OPP/README.md@round2-public-summary",
+        "details": "../docs/ROUND2_VERIFICATION.md",
+        "rawArtifactsProvided": false,
+        "independentlyRecalculatedByCatalog": false
+      }
     },
     {
       "id": "TINP",
@@ -16,8 +25,17 @@
       "commit": "729113b89e6dea59033b64c2aab3dca0c28f5fc3",
       "role": "网络执行治理套件与有限运行时实现",
       "maturity": "VERIFIED_LOCAL_CANDIDATE / NOT_DEPLOYED, upstream reported",
-      "independentVerification": "not established by hosted same-operator evidence",
-      "license": "NOT_ADJUDICATED"
+      "independentVerification": "third-party rerun reported; raw artifacts not independently recalculated; independent protocol implementation/certification not established",
+      "license": "NOT_ADJUDICATED",
+      "commitMeaning": "original catalog code snapshot, not the second-round tested commit",
+      "reportedVerification": {
+        "status": "second-round rerun reported",
+        "testedCommit": "db6ab547e09373fcb71ff6ad1a3da64285078bd9",
+        "source": "TINP/README.md@round2-public-summary",
+        "details": "../docs/ROUND2_VERIFICATION.md",
+        "rawArtifactsProvided": false,
+        "independentlyRecalculatedByCatalog": false
+      }
     }
   ]
 }

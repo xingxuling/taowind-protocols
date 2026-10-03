@@ -9,3 +9,9 @@
 当前有本地候选、只读SDK及托管异环境验证记录。真实物理多机、生产Authority和完整密钥生命周期、可信时间、独立操作员等门仍然开放。目录没有重新运行这些测试。
 
 许可观察：[LICENSE_AUDIT](https://github.com/xingxuling/TINP/blob/729113b89e6dea59033b64c2aab3dca0c28f5fc3/docs/LICENSE_AUDIT.md)仍为`NOT_ADJUDICATED`。不要打包vendor目录或用当前OPP的MIT覆盖旧快照。
+
+## 第二轮复测增量
+
+公开README现已登记OPP e3dec213 / TINP db6ab547的第二轮实际复测：TINP 225/225、原探针26/26、验收绑定篡改7/7、联合链15/15。第一轮观察保留；报告原始JSON/TAP未附，本目录未独立复算。报告重跑与独立实现认证、本机性能基准分别看待。
+
+[公开来源](https://github.com/xingxuling/TINP/blob/869f1019b0c8701f71ea82c67475da238d97e333/README.md) · [完整边界](../docs/ROUND2_VERIFICATION.md)

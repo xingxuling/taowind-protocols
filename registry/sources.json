@@ -111,6 +111,32 @@
       "verifiedOn": "2026-10-03",
       "access": "public",
       "use": "linked and summarized; not vendored"
+    },
+    {
+      "id": "OPP/README.md@round2-public-summary",
+      "repository": "xingxuling/OPP",
+      "commit": "df9134a68c6d48ab9498cba2ca196e64c9ecc877",
+      "path": "README.md",
+      "url": "https://github.com/xingxuling/OPP/blob/df9134a68c6d48ab9498cba2ca196e64c9ecc877/README.md",
+      "gitBlobSha": "b073fd76e826c860ef7aff2f0bfd7770fdfae237",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "second-round report summary; original report not republished; raw JSON/TAP not provided",
+      "reportedTestedCommit": "e3dec213e5d38f64eb3cfb6066fad87fdc61a348",
+      "independentRecalculation": false
+    },
+    {
+      "id": "TINP/README.md@round2-public-summary",
+      "repository": "xingxuling/TINP",
+      "commit": "869f1019b0c8701f71ea82c67475da238d97e333",
+      "path": "README.md",
+      "url": "https://github.com/xingxuling/TINP/blob/869f1019b0c8701f71ea82c67475da238d97e333/README.md",
+      "gitBlobSha": "88952225abd381b5cbfc0e1e56d99a3d039781f3",
+      "verifiedOn": "2026-10-03",
+      "access": "public",
+      "use": "second-round report summary; original report not republished; raw JSON/TAP not provided",
+      "reportedTestedCommit": "db6ab547e09373fcb71ff6ad1a3da64285078bd9",
+      "independentRecalculation": false
     }
   ]
 }
