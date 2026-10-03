@@ -4,6 +4,33 @@ TaoWind 协议、套件、实现与证据的统一入口。先看全貌，再进
 
 **当前是资料目录候选（informative catalog），不替代原始工程规范，不宣布16域已完成，也不合并OPP与TINP的实现仓库。**
 
+## 具体有哪些协议？
+
+### OPP 协议族：六个核心协议
+
+OPP 的协议族内部名称为 **Open Reality Protocols**。下面六项才是具体协议名；当前核心协议版本均属 `0.1.0-candidate.1`。全量规范见 [OPP Specification](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/docs/SPECIFICATION.md)，ID及版本见 [原始协议注册表](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/registry/protocols.json)。
+
+| 简称 | 协议全名 | 用途 | 规范 / 实现入口 | 协议状态 |
+|---|---|---|---|---|
+| **RXP** | Reality Exchange Protocol · 现实交换协议 | 交换信封：承载语义内容、意图、约束与动作描述；不自行执行动作 | [Schema](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/schemas/rxp.schema.json) · [结构校验实现](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/src/opp/validation.py) | `candidate` |
+| **RCP** | Reality Capability Protocol · 现实能力协议 | 描述能力、输入输出与限制，并对明确契约做精确协商 | [Schema](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/schemas/rcp.schema.json) · [能力协商实现](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/src/opp/capability.py) | `candidate` |
+| **RAP** | Reality Artifact Protocol · 现实工件协议 | 描述代码、文档、模型等工件的身份、依赖、来源与验收条件 | [Schema](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/schemas/rap.schema.json) · [结构校验实现](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/src/opp/validation.py) | `candidate` |
+| **REP** | Reality Evidence Protocol · 现实证据协议 | 把主张与来源、方法、复现路径和证据边界关联 | [Schema](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/schemas/rep.schema.json) · [结构校验实现](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/src/opp/validation.py) | `candidate` |
+| **RSP** | Reality State Protocol · 现实状态协议 | 区分观察、推导、预测等状态，并用内容根追踪版本 | [Schema](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/schemas/rsp.schema.json) · [结构校验实现](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/src/opp/validation.py) | `candidate` |
+| **CHP** | Civilization Handshake Protocol · 文明握手协议 | 交互前协商版本、能力和约束，形成协议或明确拒绝 | [Schema](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/schemas/chp.schema.json) · [握手协商实现](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/src/opp/handshake.py) | `candidate` |
+
+上述链接区分了**结构校验实现**与**协商实现**：有Schema和校验器不代表该协议所有目标能力均已完成，也不代表已获独立互操作认证。协议ID依次为 `opp.rxp.v0.1`、`opp.rcp.v0.1`、`opp.rap.v0.1`、`opp.rep.v0.1`、`opp.rsp.v0.1`、`opp.chp.v0.1`。
+
+### 套件、Profile 与实现
+
+| 名称 | 层级 | 用途 | 规范 / 实现入口 | 当前状态 |
+|---|---|---|---|---|
+| **OPP** · Open Reality Protocols | 上述六协议组成的协议族；另有运行工具链 | 能力描述、协商、受限桥接和互操作回执 | [协议规范](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/docs/SPECIFICATION.md) · [实现仓库](https://github.com/xingxuling/OPP) | 核心协议 `0.1.0-candidate.1`；工具链 `0.3.0-candidate.1` |
+| **OPP Session** · CHA 动态会话 Profile | `opp.session.v0.1` 可选Profile，不是第七个核心协议 | 将能力协商、版本绑定契约和受限Adapter组合成会话 | [Profile说明](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/docs/CHA_SESSION.md) · [会话实现](https://github.com/xingxuling/OPP/blob/da65ab1d26c01c5e2939294e415b9fd07b7dbe5a/src/opp/session.py) | `candidate` |
+| **TINP** · 网络执行治理套件 | 网络协议套件及其候选实现；不是OPP子协议 | 主体与会话、执行前权限准入、路由与传输、故障恢复、执行回执核对 | [套件与实现入口](implementations/TINP.md) · [实现仓库](https://github.com/xingxuling/TINP) · [实现偏差说明](https://github.com/xingxuling/TINP/blob/729113b89e6dea59033b64c2aab3dca0c28f5fc3/docs/SPEC_DEVIATIONS.md) | 有限范围候选；公开注册表14域 `partial`、2域 `not_implemented`，非生产部署完成 |
+
+**P00–P15是能力域路线图，不是另外16个协议名称。** 例如P04复用OPP的CHP/RCP，不能因此再虚构一个同名新协议。TINP保持自己的套件职责，OPP协议与TINP实现也不按数量简单相加。下面再按能力域查看整体覆盖与缺口。
+
 ## 从哪里开始
 
 - 想理解总体结构：读 [层级与职责](docs/ARCHITECTURE.md)
@@ -20,7 +47,7 @@ TaoWind 协议、套件、实现与证据的统一入口。先看全貌，再进
 3. **协议族/套件/Profile**：OPP拥有六个语义交换核心协议；TINP组合身份、准入、传输、恢复和证据；Session是OPP可选Profile
 4. **实现与验证**：源码、测试、回执和运行证据；不能用“有规范”代替实现，也不能用本机PASS代替生产成熟
 
-## P00–P15 总表
+## P00–P15 能力域路线图（非协议清单）
 
 截至2026-10-03，当前公开注册表的自身版本仍为`0.1.0-alpha.20`：**14项partial、2项not_implemented、0项整域implemented**。TINP README及后续证据比该注册表更新，两者分开记录。
 
